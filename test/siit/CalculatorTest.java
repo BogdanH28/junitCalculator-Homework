@@ -1,7 +1,7 @@
+package siit;
+
 import org.junit.Before;
 import org.junit.Test;
-import siit.Calculator;
-import siit.Splitter;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -54,7 +54,7 @@ public class CalculatorTest {
         splitter.addUnitOfMeasure("mm");
         splitter.addUnitOfMeasure("mm");
         splitter.addOperands("-");
-        assertThat(0.0, is(calculator.calculateTotal()));
+        assertThat(20.0, is(calculator.calculateTotal()));
     }
 
     @Test
@@ -67,6 +67,6 @@ public class CalculatorTest {
         splitter.addUnitOfMeasure("mm");
         splitter.addOperands("-");
         splitter.addOperands("+");
-        assertThat(20.0, is(calculator.calculateTotal()));
+        assertThat(10.0, is(calculator.calculateTotal()));
     }
 }

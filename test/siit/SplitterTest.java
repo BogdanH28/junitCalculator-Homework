@@ -1,9 +1,9 @@
+package siit;
+
 import org.junit.Before;
 import org.junit.Test;
-import siit.Splitter;
 
 import static junit.framework.TestCase.assertTrue;
-
 
 public class SplitterTest {
 
@@ -31,7 +31,6 @@ public class SplitterTest {
         s.addUnitOfMeasure("x");
         for (String u: s.getUnitsOfMeasure()) {
             assertTrue(u.equals("mm") || u.equals("cm") || u.equals("dm") || u.equals("m") || u.equals("km"));
-            System.out.println(u);
         }
     }
 
@@ -39,5 +38,4 @@ public class SplitterTest {
     public void testIfNonIntegerNumbersCanBeAddedInNumbersArrayListThenReceiveException() {
         s.addNumberToArrayList("13.5");
     }
-
 }

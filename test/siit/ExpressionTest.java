@@ -1,7 +1,7 @@
+package siit;
+
 import org.junit.Before;
 import org.junit.Test;
-import siit.Expression;
-import siit.Splitter;
 
 import static junit.framework.TestCase.fail;
 
